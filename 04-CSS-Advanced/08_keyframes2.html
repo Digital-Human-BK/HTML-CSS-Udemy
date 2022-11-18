@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyframes2</title>
+  <style>
+    body {
+      background: #333;
+    }
+
+    .box {
+      background-color: white;
+      width: 200px;
+      height: 200px;
+      position: relative;
+      top: 0;
+      left: 0;
+      animation: animate1 5s forwards 2s ease-in-out;
+    }
+
+    @keyframes animate1 {
+      25% {
+        top: 0;
+        left: 600px;
+        background-color: yellow;
+        border-radius: 50% 0 0 0;
+      }
+
+      50% {
+        top: 600px;
+        left: 600px;
+        background-color: red;
+        border-radius: 50% 50% 0 0;
+      }
+
+      75% {
+        top: 600px;
+        left: 0;
+        background-color: green;
+        border-radius: 50% 50% 50% 0;
+      }
+
+      100% {
+        top: 0;
+        left: 0;
+        background-color: blue;
+        border-radius: 50%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+
+</body>
+
+</html>

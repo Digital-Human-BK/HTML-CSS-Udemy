@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Shadows</title>
+  <style>
+    h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 4rem;
+    }
+
+    h1.a {
+      /* values are h-shadow | v-shadow | color */
+      text-shadow: 0.2rem 0.2rem steelblue;
+    }
+
+    h1.b {
+      /* values are h-shadow | v-shadow | blur | color */
+      text-shadow: 0.4rem 0.3rem 0.5rem steelblue;
+    }
+
+    h1.c {
+      /* White text */
+      color: #fff;
+      text-shadow: 0.2rem 0.2rem 2rem steelblue;
+    }
+
+    h1.d {
+      /* Negative values  */
+      /* values are h-shadow | v-shadow | color */
+      text-shadow: -0.2rem -0.2rem steelblue;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="a">Welcome to Pleven</h1>
+  <h1 class="b">Welcome to Pleven</h1>
+  <h1 class="c">Welcome to Pleven</h1>
+  <h1 class="d">Welcome to Pleven</h1>
+
+</body>
+
+</html>

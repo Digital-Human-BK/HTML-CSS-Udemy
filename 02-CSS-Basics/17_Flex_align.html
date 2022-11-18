@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Box</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .flex-container {
+      background-color: #f4f4f4;
+      height: 50vh;
+      display: flex;
+      flex-direction: row;
+      /* Align works on the cross*/
+      align-items: center;
+      /* Main axis align */
+      justify-content: center;
+    }
+
+    .item {
+      background: #f4f4f4;
+      border:#ccc solid 2px;
+      margin: 10px;
+      padding: 10px;
+      text-align: center;
+      border-radius: 10px;
+      /* flex: 1; */
+    }
+
+    .item-1 {
+      align-self: flex-start;
+    }
+
+    .item-3 {
+      align-self: flex-end;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="item item-1">
+      <h3>Item 1</h3>
+    </div>
+    <div class="item item-2">
+      <h3>Item 2</h3>
+    </div>
+    <div class="item item-3">
+      <h3>Item 3</h3>
+    </div>
+  </div>
+  
+</body>
+</html>

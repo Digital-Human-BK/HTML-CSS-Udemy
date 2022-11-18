@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #344a72;
+    }
+
+    #container {
+      max-width: 350px;
+      margin: 150px auto;     
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .form-wrap {
+      background-color: #fff;
+      padding: 50px 20px 5px 20px;
+    }
+
+    .form-wrap h1, 
+    .form-wrap p {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      padding-bottom: 15px;
+    }
+
+    .form-wrap .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-wrap .form-group input {
+      width: 100%;
+      padding: 5px;
+      border-radius: 3px;
+    }
+
+    .form-wrap button {
+      display: block;
+      width: 100%;
+      padding: 5px;
+      border-radius: 3px;
+      color: #fff;
+      background-color: #49c1a2; 
+      cursor: pointer;  
+    }
+
+    .form-wrap button:hover {
+      color: #142;
+      background-color: #37a08e;
+    }
+
+    .form-wrap .bottom-text {
+      font-size: 0.7em;
+    }
+
+    footer {
+      color: #fff;
+      text-align: center;
+      margin-top: 10px;      
+    }
+
+    footer a {
+      color: #49c1a2;
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="form-wrap">
+      <h1>Sign Up</h1>
+      <p>It's free and only takes a minute</p>
+      <form>
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" name="firstname" id="first-name" placeholder="John etc.">
+        </div>
+        <div class="form-group">
+          <label for="second-name">Second Name</label>
+          <input type="text" name="secondname" id="second-name" placeholder="Smith">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="johnsmith@email.com">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" placeholder="Enter Password">
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" name="confirmpassword" id="confirm-password" placeholder="Confirm your password">
+        </div>
+        <button type="submit" class="btn">Sign Up</button>
+        <p class="bottom-text">
+          By clicking Sign Up button, you agree to our 
+          <a href="#">Terms & Conditions</a> and 
+          <a href="#">Privacy Policy</a>
+        </p>      
+      </form>  
+    </div>
+    <footer>
+      <p>
+        Already have an account? <a href="#">Login Here</a>
+      </p>
+    </footer>
+
+  </div>
+  
+</body>
+</html>

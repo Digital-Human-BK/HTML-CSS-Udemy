@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variables</title>
+  <style>
+    :root {
+      --primary-color: steelblue;
+      --secondary-color: skyblue;
+      --light-color: #f4f4f4;
+      --max-width: 1100px;
+      --box-1-width: 1;
+      --box-2-width: 3;
+    }
+
+    .box-1 {
+      flex: var(--box-1-width);
+    }
+
+    .box-2 {
+      flex: var(--box-2-width);
+    }
+
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.4;
+      background: var(--light-color);
+    }
+
+    header {
+      background-color: var(--primary-color);
+      border-bottom: 5px var(--secondary-color) solid;
+      color: #fff;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      margin: auto;
+      max-width: var(--max-width);
+    }
+
+    .box {
+      background-color: var(--primary-color);
+      border-bottom: 5px var(--secondary-color) solid;
+      color: #fff;
+      padding: 1rem;
+      margin: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Css Variables</h1>
+  </header>
+  <div class="container">
+    <div class="box box-1">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias qui quibusdam non sunt eveniet libero.</p>
+    </div>
+    <div class="box box-2">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias qui quibusdam non sunt eveniet libero.</p>
+    </div>
+  </div>
+</body>
+
+</html>

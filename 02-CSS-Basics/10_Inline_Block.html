@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inline & Block Styling</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    ul {
+      background-color: darkgray;
+      border: 2px blue solid;
+      border-radius: 5px;
+
+    }
+    
+    
+    li {
+      display: inline;
+      font-size: 25px;
+    }
+
+    li a {
+      padding-right: 20px;
+      text-decoration: none;
+      
+    }
+
+    li a:hover {
+      background-color: darkred;
+      color: deeppink;
+    }
+
+    img {
+      margin: auto;
+      display: block;
+    }
+
+    .box {
+      width: 32%;
+      background: #f4f4f4;
+      padding: 20px;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="#">Tech</a></li>
+    <li><a href="#">Sport</a></li>
+    <li><a href="#">Fashion</a></li>
+  </ul>
+
+  <br><br>
+
+  <img src="./img/leaf.png" alt="My leaf">
+
+  <br><br>
+
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus earum iusto aperiam laboriosam et! Ducimus dolorum soluta velit quam eaque.</p>
+  </div>
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus earum iusto aperiam laboriosam et! Ducimus dolorum soluta velit quam eaque.</p>
+  </div>
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus earum iusto aperiam laboriosam et! Ducimus dolorum soluta velit quam eaque.</p>
+  </div>
+  
+</body>
+</html>

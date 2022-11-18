@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float & Align</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6em;
+    }
+
+    .box {
+      background: #f4f4f4;
+      border: 3px solid black;
+      padding: 20px;
+      margin-bottom: 5px;
+    }
+
+    .container {
+      /* max-width for responsive desing/mobile */
+      max-width: 960px;
+      margin: 50px auto;
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    .box p {
+      /* Text align */
+      text-align: right;
+      text-align: center;
+      text-align: justify;
+    }
+
+    #box-2 {
+      float: left;
+      width: 70%;
+    }
+
+    #box-3 {
+      float: right;
+      width: 29%;
+
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="box-1" class="box">
+      <h3>Heading1</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam at nobis possimus, quibusdam quia soluta inventore dolorum aspernatur dolore voluptatibus.</p>
+    </div>
+    <div id="box-2" class="box">
+      <h3>Heading2</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam at nobis possimus, quibusdam quia soluta inventore dolorum aspernatur dolore voluptatibus.</p>
+    </div>
+    <div id="box-3" class="box">
+      <h3>Heading3</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam at nobis possimus, quibusdam quia soluta inventore dolorum aspernatur dolore voluptatibus.</p>
+    </div>
+    
+    <div class="clear"></div>
+
+    <div id="box-4" class="box">
+      <h3>Heading3</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam at nobis possimus, quibusdam quia soluta inventore dolorum aspernatur dolore voluptatibus.</p>
+    </div>
+  </div>
+  
+</body>
+</html>

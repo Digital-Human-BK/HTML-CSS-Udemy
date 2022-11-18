@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nth Child Pseudo Selector</title>
+  <style>
+    li {
+      padding: 0.25rem;
+      margin: 0.25rem;
+      list-style: none;
+    }
+
+    /* first child */
+    li:first-child {
+      background: red;
+    }
+
+    /* last child */
+    li:last-child {
+      background: red;
+    }
+
+    /* Position 3 */
+    li:nth-child(3) {
+      background: purple !important;
+    }
+
+    /* Every 3 */
+    li:nth-child(3n+0) {
+      background: salmon;
+    }
+
+    /* Every 3 after 7 */
+    li:nth-child(3n+7) {
+      background: seagreen;
+    }
+
+    /* Every Odd */
+    li:nth-child(odd) {
+      background: slateblue;
+    }
+
+    /* Every even */
+    li:nth-child(even) {
+      background: #ddd;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li>item1</li>
+    <li>item2</li>
+    <li>item3</li>
+    <li>item4</li>
+    <li>item5</li>
+    <li>item6</li>
+    <li>item7</li>
+    <li>item8</li>
+    <li>item9</li>
+    <li>item10</li>
+    <li>item11</li>
+    <li>item12</li>
+    <li>item13</li>
+    <li>item14</li>
+    <li>item15</li>
+    <li>item16</li>
+    <li>item17</li>
+    <li>item18</li>
+    <li>item19</li>
+    <li>item20</li>
+  </ul>
+
+</body>
+
+</html>
