@@ -32,7 +32,7 @@
           background-color: $medium-color;
         }
       }
-      
+
       li {
         line-height: 2;
 
@@ -48,6 +48,56 @@
           font-size: 2rem;
           font-weight: bold;
         }
+      }
+    }
+  }
+
+  //home section c
+  &-c {
+    .process {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      text-align: center;
+
+      &-icon {
+        position: relative;
+        border-radius: 50%;
+        background-color: $dark-color;
+        color: $font-color;
+        padding: 2rem;
+        width: 6rem;
+        height: 6rem;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        transition: all .5s;
+
+        &:hover {
+          background-color: $main-color;
+          transform: scale(1.1);
+
+          .process-step {
+            background-color: $dark-color;
+          }
+        }
+      }
+
+      &-step {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 1rem;
+        border-radius: 50%;
+        height: 1rem;
+        width: 1rem;
+        line-height: 1rem;
+        padding: 1rem;
+        background-color: $main-color;
+        transition: all .5s;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
   }
