@@ -1,7 +1,26 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  list-style: none;
-  text-decoration: none;
   box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+  background-color: #333;
 }
