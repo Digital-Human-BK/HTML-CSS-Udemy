@@ -22,7 +22,6 @@ img {
 
 body {
   font-family: "Dosis", sans-serif;
-  background-color: #333;
 }
 
 .container {
@@ -59,6 +58,32 @@ button[class^=btn-]:hover {
   background-color: #ffbc00;
 }
 
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.py-4 {
+  padding: 3rem 0;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 2rem 0;
+}
+.my-3 {
+  margin: 3rem 0;
+}
+.my-4 {
+  margin: 3rem 0;
+}
+
 .lead {
   font-size: 1.25rem;
   margin-bottom: 2rem;
@@ -78,6 +103,7 @@ button[class^=btn-]:hover {
 .main-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 1rem;
 }
 .main-nav ul {
@@ -117,4 +143,42 @@ button[class^=btn-]:hover {
   background: url("../../img/showcase.jpg") no-repeat 20% 30%/cover;
   height: 5.5rem;
   border-bottom: 3px solid #ffbc00;
+}
+
+#home-a .specials {
+  margin-top: 3rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+#home-a .specials i {
+  color: #ffbc00;
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+}
+#home-b .stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#home-b .stats div {
+  padding: 3rem;
+}
+#home-b .stats div:nth-child(odd) {
+  background-color: #f4f4f4;
+}
+#home-b .stats div:nth-child(even) {
+  background-color: #ccc;
+}
+#home-b .stats li {
+  line-height: 2;
+}
+#home-b .stats li i {
+  font-size: 3rem;
+}
+#home-b .stats li.stats-title {
+  font-size: 1.5rem;
+}
+#home-b .stats li.stats-number {
+  font-size: 2rem;
+  font-weight: bold;
 }

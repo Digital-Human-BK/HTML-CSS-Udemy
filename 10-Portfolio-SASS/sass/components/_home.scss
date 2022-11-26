@@ -1,0 +1,54 @@
+#home {
+  //home section a
+  &-a {
+    .specials {
+      margin-top: 3rem;
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(4, 1fr);
+
+      i {
+        color: $main-color;
+        font-size: 2rem;
+        padding-bottom: 0.5rem;
+      }
+    }
+  }
+
+  //home section b
+  &-b {
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      div {
+        padding: 3rem;
+
+        &:nth-child(odd) {
+          background-color: $light-color;
+        }
+
+        &:nth-child(even) {
+          background-color: $medium-color;
+        }
+      }
+      
+      li {
+        line-height: 2;
+
+        i {
+          font-size: 3rem;
+        }
+
+        &.stats-title {
+          font-size: 1.5rem;
+        }
+
+        &.stats-number {
+          font-size: 2rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
