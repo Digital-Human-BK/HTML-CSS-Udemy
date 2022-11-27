@@ -84,6 +84,23 @@ button[class^=btn-]:hover {
   margin: 3rem 0;
 }
 
+.bg-main {
+  background-color: #ffbc00;
+  color: #fff;
+}
+.bg-dark {
+  background-color: #333;
+  color: #fff;
+}
+.bg-light {
+  background-color: #f4f4f4;
+  color: #000;
+}
+.bg-medium {
+  background-color: #ccc;
+  color: #000;
+}
+
 .lead {
   font-size: 1.25rem;
   margin-bottom: 2rem;
@@ -249,6 +266,77 @@ button[class^=btn-]:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#about-a .about-info {
+  display: grid;
+  grid-template-areas: "bioimage bio bio" "aw1 aw2 aw3";
+  gap: 1.25rem;
+}
+#about-a .bio-image {
+  grid-area: bioimage;
+}
+#about-a .bio {
+  grid-area: bio;
+  border-left: 3px solid #ffbc00;
+  padding: 0.75rem;
+}
+#about-a .award-1 {
+  grid-area: aw1;
+}
+#about-a .award-2 {
+  grid-area: aw2;
+}
+#about-a .award-3 {
+  grid-area: aw3;
+}
+#about-a .award-1 i, #about-a .award-2 i, #about-a .award-3 i {
+  margin: 1rem;
+  font-size: 3rem;
+  color: #ffbc00;
+}
+#about-b .progress {
+  overflow: hidden;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+#about-b .progress div {
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  background-color: #ffbc00;
+}
+#about-c .about-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+#about-c .about-logos img {
+  width: 70%;
+  justify-self: center;
+}
+#about-d .testimonials {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+#about-d .testimonials ul {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+#about-d .testimonials p {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+#about-d .testimonials img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 0.5rem;
 }
 
 #main-footer {
