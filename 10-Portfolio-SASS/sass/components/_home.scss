@@ -64,13 +64,18 @@
         position: relative;
         border-radius: 50%;
         background-color: $dark-color;
-        color: $font-color;
+        color: set-text-color($dark-color);
         padding: 2rem;
         width: 6rem;
         height: 6rem;
-        font-size: 2rem;
+        font-size: 2.5rem;
+        margin: 0 auto;
         margin-bottom: 1rem;
         transition: all .5s;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         &:hover {
           background-color: $main-color;
@@ -78,6 +83,7 @@
 
           .process-step {
             background-color: $dark-color;
+            color: set-text-color($dark-color);
           }
         }
       }
@@ -92,6 +98,7 @@
         width: 1rem;
         line-height: 1rem;
         padding: 1rem;
+        color: set-text-color($main-color);
         background-color: $main-color;
         transition: all .5s;
         

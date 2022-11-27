@@ -148,7 +148,7 @@ button[class^=btn-]:hover {
 }
 
 #header-home {
-  background: url("../../img/showcase.jpg") no-repeat center right/cover;
+  background: url("../img/showcase.jpg") no-repeat center right/cover;
   height: 100vh;
   color: #fff;
 }
@@ -161,7 +161,7 @@ button[class^=btn-]:hover {
   line-height: 1.2;
 }
 #header-inner {
-  background: url("../../img/showcase.jpg") no-repeat 20% 30%/cover;
+  background: url("../img/showcase.jpg") no-repeat 20% 30%/cover;
   height: 5.5rem;
   border-bottom: 3px solid #ffbc00;
 }
@@ -217,9 +217,13 @@ button[class^=btn-]:hover {
   padding: 2rem;
   width: 6rem;
   height: 6rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  margin: 0 auto;
   margin-bottom: 1rem;
   transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #home-c .process-icon:hover {
   background-color: #ffbc00;
@@ -227,6 +231,7 @@ button[class^=btn-]:hover {
 }
 #home-c .process-icon:hover .process-step {
   background-color: #333;
+  color: #fff;
 }
 #home-c .process-step {
   position: absolute;
@@ -238,6 +243,7 @@ button[class^=btn-]:hover {
   width: 1rem;
   line-height: 1rem;
   padding: 1rem;
+  color: #fff;
   background-color: #ffbc00;
   transition: all 0.5s;
   display: flex;
